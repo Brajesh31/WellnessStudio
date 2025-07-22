@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkOut Plans</title>
+    <link rel="stylesheet" href="WorkOut.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="wellnesslogo.png" alt="Wellness Logo"></a></div>
+            <ul>
+                <li><a href="index.html" class="h">Home</a></li>
+                <li><a href="aboutUS.html" class="h">About us</a></li>
+                <button class="account" id="my-account-btn"><a href="#">My Account</a></button>
+            </ul>
+        </div>
+    </header>
+    <div class="signin" id="signIn" style="display: none;">
+        <div class="popupS">
+            <div class="close-btn" id="closePopupButton">&times;</div>
+            <h3 class="s1">Sign-in</h3>
+            <p class="s2">Enter relevant information</p>
+            <div class="s3">
+                <h6 class="a ss1"><i class='bx bx-user'></i> Name <input placeholder=" Enter your Name" class="i 1"></h6>
+                <h6 class="a ss2"><i class='bx bx-envelope'></i> Mail <input placeholder=" Enter your mail address" class="i 2"></h6>
+                <h6 class="a ss3"><i class='bx bx-phone'></i> Contact <input placeholder="Enter your Contact number" class="i 3"></h6>
+                <h6 class="a ss4"><i class='bx bx-lock'></i> Password <input placeholder="Set a strong password" class="i 4"></h6>
+            </div>
+            <button class="s4">Sign-in</button>
+            <p class="s5">Login if you have an account</p>
+            <button class="s6">Login</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="item mediocre-fitness-workout" id="k1">0 fat Workout</div>
+        <div class="item pro-fitness-workout" id="k2">Pro Workout</div>
+        <div class="item endurance-building" id="k3">Endurance Building</div>
+        <div class="item diabetes" id="k4">Diabetes</div>
+        <div class="item overweight" id="k5">Overweight</div>
+        <div class="item joint-pain" id="k6">Joint Pain</div>
+        <div class="item pregnancy" id="k7">Pregnancy</div>
+        <div class="item stress" id="k8">Stress</div>
+        <div class="info">
+            <div class="desired" id="des">&#8592; Select your desired workout</div>
+            <div id="para1"></div>
+            <div id="para2"></div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 WellnessStudio. All rights reserved.</p>
+        <p>Policies and rules | Privacy Policy | Terms of Use</p>
+        <p>Mumbai, Maharashtra</p>
+    </footer>
+    <script src="WorkOut.js"></script>
+</body>
+</html>

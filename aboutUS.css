@@ -1,0 +1,206 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header{
+    height: 100px;
+    border: solid black 1px;
+    background-color: black;
+    align-items: center;
+    position:sticky;
+    top:0px;
+    transition: height 0.3s ease;
+    z-index:1000;
+}
+.navbar{
+   display:flex;
+   height:100%;
+   align-items: center;
+   justify-content: space-between;
+}
+.logo{
+   padding-left:30px;
+}
+.logo img{
+    height:100px;
+    width:fit-content;
+    
+}
+header ul{
+   padding-right: 50px;
+}
+header ul li{
+    display:inline-block;
+    padding-right:20px;
+}
+header ul li a{
+    text-decoration:none;
+    font-size:medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+.h:hover{
+    color:grey;
+}
+.h::before{
+    content:'';
+    position:absolute;
+    top: -20;
+    left:auto 10px;
+    height:3px;
+    width:0%;
+    transform:translateY(30px);
+    background-color: rgb(232, 23, 58);
+}
+.h:hover::before{
+    width:80px;
+}
+header button{
+    padding:10px;
+    border-radius: 15px;
+    background-color:rgb(148, 142, 142);
+}
+header button a{
+    text-decoration:none;
+    color:black;
+}
+ 
+header button a:hover{
+    text-decoration:none;
+    color:white;
+}
+.signin{
+    display:none;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    z-index: 1000;
+    height:100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.popupS{
+    position:block;
+    background-color: white;
+    margin:auto;
+    margin-top:10%;
+    padding:10px;
+    border: 1px solid #888;
+    border-radius:30px;
+    max-width: 400px;
+    height:450px;
+}
+.s1{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.s4{
+    margin-left:160px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:rgb(57, 139, 255);
+    color:white;
+    border-radius:10px;
+    margin-bottom:30px;
+}
+.s5{
+    font-size: small;
+    margin-left:50px;
+    color:grey;
+}
+.s6{
+    margin-left:167px;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    background-color:rgb(190, 190, 190);
+    color:black;
+    border-radius:10px;
+}
+input::placeholder{
+    font-size:16px;
+}
+.a{
+    float:right;
+    margin-bottom: 10px;
+}
+.i{
+    border-radius:10px;
+    height:35px;
+}
+input{
+    padding-left: 20px;
+}
+main {
+    padding-top: 20px;
+    padding-left:10%;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    height: 400px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+main{
+    content:"";
+    color: #fff;
+    background-image:url(AboutUsbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position:center;
+    padding-bottom: 190px;
+    font-size: larger;
+    font-weight: 800;
+    padding-top:130px;
+}
+.mission h2{
+    transform: translateY(-50px);
+}
+.mission p{
+    transform:translateY(-40px);
+    padding-right:60px;
+}
+@media only screen and (max-width:800px){
+    .logo{
+        padding-left:10px;
+    }
+    header ul {
+        display:inline-block;
+        transform:translateX(-20px);
+        padding-left:40px;
+    }
+    header ul li a{
+        font-size:10px;
+    }
+    .account{
+       transform: translateX(10px);
+       font-size: 9px;
+     }
+     .i{
+        border-radius:10px;
+        height:35px;
+    }
+     main{
+        background-image: none;
+        background-color:rgb(230, 17, 52);
+        color: #fff;
+        font-size: smaller;
+     }
+    .logo img{
+        height:80px;
+        width:fit-content;
+        margin-left:px;
+    }
+
+}

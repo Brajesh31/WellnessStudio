@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plans</title>
+    <link rel="stylesheet" href="DietPlans.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="wellnesslogo.png" alt="Wellness Studio Logo"></a></div>
+            <ul>
+                <li><a href="index.html" class="h">Home</a></li>
+                <li><a href="aboutUS.html" class="h">About Us</a></li>
+                <button class="account" id="my-account-btn"><a href="#">My Account</a></button>
+            </ul>
+        </div>
+    </header>
+    <div class="signin" id="signIn">
+        <div class="popupS">
+            <div class="close-btn" id="closePopupButton">&times;</div>
+            <h3 class="s1">Sign-in</h3>
+            <p class="s2">Enter relevant information</p>
+            <div class="s3">
+                <h6 class="a ss1"><i class='bx bx-user'></i> Name <input placeholder=" Enter your Name" class="i 1" ></h6>
+                <h6 class="a ss2"><i class='bx bx-envelope'></i> Mail <input placeholder=" Enter your mail address" class="i 2"></h6>
+                <h6 class="a ss3"><i class='bx bx-phone'></i> Contact <input placeholder="Enter your Contact number" class="i 3"></h6>
+                <h6 class="a ss4"><i class='bx bx-lock' ></i> Password <input placeholder="Set a strong password" class="i 4"></h6>
+            </div>
+            <button class="s4">Sign-in</button>
+            <p class="s5">Login if you have an account</p>
+            <button class="s6">Login</button>
+        </div>
+    </div>
+    <main class="Display">
+        <div class="container">
+            <div class="item box-select">
+                <div class="select-box">
+                    <div><h5>Menu</h5></div>
+                    <div class="dropdown-container">
+                        <select id="meal-select" class="dropdown">
+                            <option value="">Select a meal</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="snacks">Snacks</option>
+                        </select>
+                        <select id="meal-items" class="dropdown" style="display: none;">
+                            <option value="">Select an item</option>
+                        </select>
+                        <div class="quantity-container" style="display: none;">
+                            <button id="quantity-minus">-</button>
+                            <input type="number" id="quantity" value="1" min="1">
+                            <button id="quantity-plus">+</button>
+                        </div>
+                        <button id="add-item" style="display: none;">Add Item</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item box-breakfast">
+                <div class="breakfast-box">
+                    <div><h5>Breakfast</h5></div>
+                    <ul id="breakfast-list"></ul>
+                </div>
+            </div>
+            <div class="item box-lunch">
+                <div class="lunch-box">
+                    <div><h5>Lunch</h5></div>
+                    <ul id="lunch-list"></ul>
+                </div>
+            </div>
+            <div class="item box-snacks">
+                <div class="snack-box">
+                    <div><h5>Snacks</h5></div>
+                    <ul id="snacks-list"></ul>
+                </div>
+            </div>
+            <div class="item box-dinner">
+                <div class="dinner-box">
+                    <div><h5>Dinner</h5></div>
+                    <ul id="dinner-list"></ul>
+                </div>
+            </div>
+            <div class="item box-total">
+                <p>Total calories: <span id="total-calories">0</span></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 WellnessStudio. All rights reserved.</p>
+        <p>Policies and rules | Privacy Policy | Terms of Use</p>
+        <p>Mumbai, Maharashtra</p>
+    </footer>
+    <script src="DietPlans.js"></script>
+</body>
+</html>

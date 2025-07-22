@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Journeys</title>
+    <link rel="stylesheet" href="landingPageStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="logo"><a href="index.html"><img src="wellnesslogo.png"></a></div>
+    <ul>
+        <li><a href="index.html" class="h">Home</a></li>
+        <li><a href="aboutUS.html" class="h">About Us</a></li>
+        <button class="account" id="my-account-btn"><a href="#">My Account</a></button>
+    </ul>
+    </div>
+</header>
+<div class="signin" id="signIn">
+    <div class="popupS">
+        <div class="close-btn" id="closePopupButton">&times;</div>
+        <h3 class="s1">Sign-in</h3>
+        <p class="s2">Enter relevant information</p>
+        <div class="s3">
+        <h6 class="a ss1"><i class='bx bx-user'></i> Name <input placeholder=" Enter your Name" class="i 1" ></h6>
+        <h6 class="a ss2"><i class='bx bx-envelope'></i> Mail <input placeholder=" Enter your mail address" class="i 2"></h6>
+        <h6 class="a ss3"><i class='bx bx-phone'></i> Contact <input placeholder="Enter your Contact number" class="i 3"></h6>
+        <h6 class="a ss4"><i class='bx bx-lock' ></i> Password <input placeholder="Set a strong password" class="i 4"></h6>
+        </div>
+        <button class="s4">Sign-in</button>
+        <p class="s5">Login if you have an account</p>
+        <button class="s6">Login</button>
+    </div>
+ </div>
+<section><div class="contentLine"><h5>We are soon going to conduct online seminars</h5></div></section>
+<section><div class="Box1"><img class="landingPageimg" src="landingPage.jpg"><h1>The best guide to assist on your way to stay fit</h1></section>
+    <section><div class="asanas">
+       <button class="container" id="c1"><p>BMI Calculator</p></button>
+          <div id="popup" class="popup">
+                <div class="popup-content">
+            <div class="close-btn" id="closePopupBtn">&times;</div>
+            <h2>BMI Calculator</h2>
+            <p>Helps to estimate body fat and health risk</p>
+            <input id="height" placeholder="Enter height in cm">
+            <input id="weight" placeholder="Enter weight in kg">
+            <button class="BMIbutton" onclick="calculateBMI()" class="button">Calculate BMI</button>
+            <div id="result"></div>
+           </div>
+          </div>
+
+       <button class="container" id="c2" onclick="DPbutton()"><p>Diet Plans</p></button>
+       <button class="container" id="c3" onclick="WPbutton()"><p>Workout Plans</p></button>
+    </div></section>
+    <section class="blog-parent">
+        <h1 class="inspire">Blogs to inspire you
+          <h6 class="physique"><p>-CHANGE YOUR PHYSIQUE IN 42 DAYS: 
+
+            Starting may be a bit difficult, but you will come up with time. The plan will majorly focus 30% on workouts and 70% on diet and lifestyle. Start your goal with easy tasks and later increase your efforts week by week. You can also rate yourself based on how you followed each essential step.<p><h6>
+        </h1>
+      <div class="blog">  
+        <div class="w w1"><p>WEEK-1<br>Sleep well: at least sleep for 7-8hrs a day 
+            Don`t eat less, eat right: reduce carbs to 50% of your daily consumption.<br>
+            Avoid Sugar (Golden rule) Below are some ways to replace carbs in Indian diet.<br> 
+             1.barley, sorghum, barley, Oats flour instead of wheat floor<br> 
+             2.Brown rice instead of white<br> 
+             Maintain your daily step count to 6000 steps<p> </div>
+        <div class="w w2"><p>WEEK-2<br>1.Increase daily step count to 7000 steps<br>2.Drink 9-10 glasses of water each day<br> 
+             <br>3.Avoid oil completely<br>4.Leafy vegetables instead of potatoes<p></div>
+        <div class="w w3"><p>WEEK-3<br>1.Increase daily step count to 8000 steps<br> 
+              2.Make 3 windows of 1 hour.Eat all the food in the specified time of 1 window,do not eat in between.<br>
+              3.Start doing planks depending on your body size. It may vary from 30s-45s. </p></div>
+        <div class="w w4"><p>WEEK-4<br>Follow the same tasks which you were following upto week 3.<br>
+          Increase the plank timings to 8500
+        </p></div>
+        <div class="w w5"><p>WEEK-5<br>1. Increase daily step count to 9000 steps<br> 
+            2.Indulge yourself in Swimming, Skipping, Battle Ropes, Jogging,<br>  
+            3.Add Healthy fats and Proteins in your diet to gain some muscles and lift some weights daily</p></div>
+        <div class="w w6"><p>WEEK-6<br>This is the final week,Congratulations you have made it up to the final week and<br>
+            you may already notice many changes in your body.<br>Follow the same diet and workout.<br>
+            Also, you may increase the step count to 10000 steps. </p></div>
+        <div class="w w7"><h3>Some additional tips</h3>
+            <ol>
+              <li>Set realistic goals</li>
+                 <ul style="list-style-type: disc;">
+                    <li>Loosing 1-2 pounds a week</li>
+                    <li>Avoiding our favourite food items completely is difficult so start avoding slowly<br>
+                      as you get familiar,you may follow a very strict diet</li>
+                </ul>
+              <li>Get out of your comfort zone</li>
+            </ol>
+          </div>
+      </div> 
+    </section>
+    <footer>
+        <p>&copy; 2024 WellnessStudio. All rights reserved.</p>
+        <p>Policies and rules | Privacy Policy | Terms of Use</p>
+        <p>Mumbai, Maharashtra</p>
+    </footer>
+    <script src="landingPageJS.js"></script>
+</body>
+</html>

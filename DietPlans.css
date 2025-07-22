@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    height: 100px;
+    border: solid black 1px;
+    background-color: black;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    transition: height 0.3s ease;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-left: 30px;
+}
+
+.logo img {
+    height: 100px;
+    width: fit-content;
+}
+
+header ul {
+    padding-right: 50px;
+}
+
+header ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.h:hover {
+    color: grey;
+}
+
+.h::before {
+    content: '';
+    position: absolute;
+    top: -20;
+    left: auto 10px;
+    height: 3px;
+    width: 0%;
+    transform: translateY(30px);
+    background-color: rgb(232, 23, 58);
+}
+
+.h:hover::before {
+    width: 80px;
+}
+
+header button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(148, 142, 142);
+}
+
+header button a {
+    text-decoration: none;
+    color: black;
+}
+
+header button a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.signin {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popupS {
+    position: block;
+    background-color: white;
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px;
+    border: 1px solid #888;
+    border-radius: 30px;
+    max-width: 400px;
+    height: 450px;
+}
+
+.s1 {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.s4 {
+    margin-left: 160px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(57, 139, 255);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.s5 {
+    font-size: small;
+    margin-left: 50px;
+    color: grey;
+}
+
+.s6 {
+    margin-left: 167px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(190, 190, 190);
+    color: black;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.a {
+    float: right;
+    margin-bottom: 10px;
+}
+
+.i {
+    border-radius: 10px;
+    height: 35px;
+}
+
+input {
+    padding-left: 20px;
+}
+.container{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    margin:20px;
+    gap:10px;
+  }
+  .item{
+     display:flex;
+     border-radius:20px;
+     font-weight:bolder;
+     font-size:30px;
+  }
+  .box-select{
+     background-color: pink;
+     grid-row-start:1;
+     grid-row-end:8;
+     grid-column-start:1;
+     grid-column-end:2;
+     padding:20px;
+     justify-content: center;
+  }
+  .box-breakfast{
+   background-color:rgb(255, 127, 148);
+   width:auto;
+   grid-row-start:1;
+   grid-row-end:4;
+   grid-column-start:2;
+   grid-column-end:4;
+   height:250px;
+   padding:20px;
+  }
+  .box-lunch{
+    background-color:rgb(255, 100, 126);
+    width:auto;
+    grid-column:span 4;
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column-start:4;
+    grid-column-end:6;
+    padding:20px;
+  }
+  .box-snacks{
+   background-color:rgb(255, 90, 104);
+   width:auto;
+   grid-column:span 4;
+   grid-row-start:4;
+   grid-row-end:7;
+   grid-column-start:2;
+   grid-column-end:4;
+   padding:20px;
+  }
+ .box-dinner{
+  background-color:rgb(255,70,95);
+  width:auto;
+  grid-column:span 4;
+   grid-row-start:4;
+   grid-row-end:7;
+   grid-column-start:4;
+   grid-column-end:6;
+   padding:20px;
+ }
+ .box-total{
+     background-color:rgb(87, 7, 20);
+     grid-row-start:7;
+     grid-row-end:8;
+     grid-column-start:2;
+     grid-column-end:6;
+     color: #fff;
+     justify-content:center;
+     padding-top:3%;
+ }
+ footer {
+     height: 400px;
+     background-color: #333;
+     color: #fff;
+     text-align: center;
+     padding: 20px;
+ }
+
+.breakfast-box ul, .lunch-box ul, .snack-box ul, .dinner-box ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.breakfast-box ul li, .lunch-box ul li, .snack-box ul li, .dinner-box ul li {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding:2px;
+    padding-right:20px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+#meal-select{
+    border-radius:10px;
+    height:40px;
+    width:159px;
+    background-color: rgb(250, 128, 148);
+    margin-bottom:30px;
+}
+#meal-items{
+    border-radius:10px;
+    height:40px;
+    background-color: rgb(250, 128, 148);
+}
+.quantity-container{
+    width:50px;
+    margin-left:25px;
+    margin-top:20px;
+}
+#quantity-minus{
+    width:20px;
+    padding-left:6px;
+    padding-right:6px;
+    background-color: rgb(250, 128, 148);
+}
+#quantity-plus{
+    width:20px;
+    padding-left:6px;
+    padding-right:6px;
+    background-color: rgb(250, 128, 148);
+}
+#quantity{
+    width:30px;
+}
+#add-item{
+    border-radius:10px;
+    height:40px;
+    width:120px;
+    background-color: rgb(250, 128, 148);
+    margin-left:12px;
+    margin-top:30px;
+}
+.remove-button {
+    background-color: rgb(72, 63, 63);
+    color: white;
+    border: none;
+    border-radius:50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left:10px;
+}
+@media only screen and (max-width:800px){
+    .i{
+        border-radius:10px;
+        height:35px;
+    }
+    .box-breakfast{
+        height: 70px;
+       }
+       .box-lunch{
+         height:70px;
+       }
+       .box-snacks{
+        height:70px;
+       }
+      .box-dinner{
+       height:70px;
+      }
+      .item{
+        font-size:medium;
+      }
+    .logo{
+        padding-left:10px;
+    }
+    header ul {
+        display:inline-block;
+        transform:translateX(-20px);
+        padding-left:40px;
+    }
+    header ul li a{
+        font-size:10px;
+    }
+    .account{
+       transform: translateX(10px);
+       font-size: 9px;
+     }
+     main{
+        font-size: smaller;
+     }
+    .logo img{
+        height:80px;
+        width:fit-content;
+        margin-left:px;
+    } 
+    .container{
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns:1fr 1fr 1fr;
+        margin:10px;
+        gap:5px;
+        height:1500px;
+      }
+      .item{
+         display:flex;
+         padding-left:10%;
+         border-radius:20px;
+         font-weight:bolder;
+         font-size:30px;
+      }
+      .box-select{
+         background-color: pink;
+         grid-row-start:1;
+         grid-row-end:10;
+         grid-column-start:1;
+         grid-column-end:2;
+         
+      }
+      .box-breakfast{
+       background-color:rgb(255, 127, 148);
+       width:auto;
+       grid-row-start:1;
+       grid-row-end:3;
+       grid-column-start:2;
+       grid-column-end:4;
+       height:300px;
+      }
+      .box-lunch{
+        background-color:rgb(255, 100, 126);
+        width:auto;
+        grid-row-start:3;
+        grid-row-end:5;
+        grid-column-start:2;
+        grid-column-end:4;
+        height:300px;
+      }
+      .box-snacks{
+       background-color:rgb(255, 90, 104);
+       width:auto;
+       grid-column:span 4;
+       grid-row-start:5;
+       grid-row-end:7;
+       grid-column-start:2;
+       grid-column-end:4;
+       height:300px;
+      }
+     .box-dinner{
+      background-color:rgb(255,70,95);
+      width:auto;
+      grid-column:span 4;
+       grid-row-start:7;
+       grid-row-end:9;
+       grid-column-start:2;
+       grid-column-end:4;
+       height:300px;
+     }
+     .box-total{
+         background-color:rgb(87, 7, 20);
+         grid-row-start:9;
+         grid-row-end:10;
+         grid-column-start:2;
+         grid-column-end:4;
+         color: #fff;
+         font-size:medium;
+         align-items: center;
+     }
+}
